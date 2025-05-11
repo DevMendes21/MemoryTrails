@@ -51,27 +51,27 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(150, 120);
+            this.btnSair.Location = new System.Drawing.Point(20, 55);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(250, 60);
+            this.btnSair.Size = new System.Drawing.Size(120, 35);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSair.Click += new System.EventHandler(this.MenuItemSair_Click);
             this.pnlInfo.Controls.Add(this.btnSair);
             this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInfo.Location = new System.Drawing.Point(0, 1000);
+            this.pnlInfo.Location = new System.Drawing.Point(0, 500);
             this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(1600, 200);
+            this.pnlInfo.Size = new System.Drawing.Size(800, 100);
             this.pnlInfo.TabIndex = 0;
             // 
             // lblTempo
             // 
             this.lblTempo.AutoSize = true;
-            this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTempo.Location = new System.Drawing.Point(1200, 40);
+            this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTempo.Location = new System.Drawing.Point(560, 15);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(220, 32);
             this.lblTempo.TabIndex = 4;
@@ -80,8 +80,8 @@ namespace TrilhasDaMemoria
             // lblPares
             // 
             this.lblPares.AutoSize = true;
-            this.lblPares.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPares.Location = new System.Drawing.Point(675, 40);
+            this.lblPares.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPares.Location = new System.Drawing.Point(340, 15);
             this.lblPares.Name = "lblPares";
             this.lblPares.Size = new System.Drawing.Size(180, 32);
             this.lblPares.TabIndex = 3;
@@ -90,8 +90,8 @@ namespace TrilhasDaMemoria
             // lblTentativas
             // 
             this.lblTentativas.AutoSize = true;
-            this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTentativas.Location = new System.Drawing.Point(150, 40);
+            this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTentativas.Location = new System.Drawing.Point(20, 15);
             this.lblTentativas.Name = "lblTentativas";
             this.lblTentativas.Size = new System.Drawing.Size(200, 32);
             this.lblTentativas.TabIndex = 2;
@@ -101,10 +101,10 @@ namespace TrilhasDaMemoria
             // 
             this.btnReiniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReiniciar.BackColor = System.Drawing.Color.LightBlue;
-            this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReiniciar.Location = new System.Drawing.Point(675, 120);
+            this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReiniciar.Location = new System.Drawing.Point(340, 55);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(250, 60);
+            this.btnReiniciar.Size = new System.Drawing.Size(120, 35);
             this.btnReiniciar.TabIndex = 1;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@ namespace TrilhasDaMemoria
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
-            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(1200, 120);
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnVoltar.Location = new System.Drawing.Point(660, 55);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(250, 60);
+            this.btnVoltar.Size = new System.Drawing.Size(120, 35);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
@@ -128,7 +128,7 @@ namespace TrilhasDaMemoria
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 1200);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.pnlInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
