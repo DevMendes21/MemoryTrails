@@ -181,13 +181,13 @@ namespace TrilhasDaMemoria
                         switch (totalPares * 2) // Total de cartas
                         {
                             case 8: // Fácil (4x2)
-                                espacoEntreCartas = 120; // Espaçamento menor para evitar que fiquem muito distantes
+                                espacoEntreCartas = 90; // Espaçamento muito reduzido para deixar as cartas mais juntas
                                 break;
                             case 18: // Médio (6x3)
-                                espacoEntreCartas = 110; // Espaçamento médio que funciona bem
+                                espacoEntreCartas = 80; // Espaçamento reduzido para deixar as cartas mais juntas
                                 break;
                             case 32: // Difícil (8x4)
-                                espacoEntreCartas = 60; // Espaçamento mínimo para garantir que todas as cartas apareçam na tela
+                                espacoEntreCartas = 50; // Espaçamento mínimo absoluto para garantir que todas as cartas apareçam na tela
                                 break;
                             default:
                                 espacoEntreCartas = 100; // Valor padrão para outros casos

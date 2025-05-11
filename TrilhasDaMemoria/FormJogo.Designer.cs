@@ -51,7 +51,7 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(220, 55); // Mais pru00f3ximo dos outros botu00f5es
+            this.btnSair.Location = new System.Drawing.Point(150, 55); // Extremamente próximo dos outros botões
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(100, 35);
             this.btnSair.TabIndex = 7;
@@ -115,7 +115,7 @@ namespace TrilhasDaMemoria
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
             this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(120, 55); // Mais pru00f3ximo do Reiniciar
+            this.btnVoltar.Location = new System.Drawing.Point(85, 55); // Extremamente próximo do Reiniciar
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(100, 35);
             this.btnVoltar.TabIndex = 0;
