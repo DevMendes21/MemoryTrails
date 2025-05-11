@@ -83,7 +83,7 @@ namespace TrilhasDaMemoria
             // menuItemSair
             // 
             this.menuItemSair.Name = "menuItemSair";
-            this.menuItemSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.menuItemSair.ShortcutKeys = System.Windows.Forms.Keys.F4;
             this.menuItemSair.Size = new System.Drawing.Size(180, 22);
             this.menuItemSair.Text = "Sair";
             this.menuItemSair.Click += new System.EventHandler(this.MenuItemSair_Click);
