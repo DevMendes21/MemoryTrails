@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrilhasDaMemoria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60c0f8e1ecad167db6caa10d1e1b5003ded43165")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0e3bc5bc50ed21b66456081aaa1f9f251fcecf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrilhasDaMemoria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrilhasDaMemoria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
