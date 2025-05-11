@@ -102,7 +102,7 @@ namespace TrilhasDaMemoria
             this.btnReiniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReiniciar.BackColor = System.Drawing.Color.LightBlue;
             this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReiniciar.Location = new System.Drawing.Point(20, 55);
+            this.btnReiniciar.Location = new System.Drawing.Point(20, 55); // Abaixo de Tentativas
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(100, 35);
             this.btnReiniciar.TabIndex = 1;
@@ -115,7 +115,7 @@ namespace TrilhasDaMemoria
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
             this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(160, 55);
+            this.btnVoltar.Location = new System.Drawing.Point(160, 55); // Abaixo de Pares
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(100, 35);
             this.btnVoltar.TabIndex = 0;
