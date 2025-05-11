@@ -41,8 +41,8 @@ namespace TrilhasDaMemoria
             // Configura a aparência inicial da carta
             this.Virada = false;
             this.Encontrada = false;
-            this.Font = new Font("Arial", 24, FontStyle.Bold);
-            this.Size = new Size(80, 80); // Reduzido para caber melhor no modo Difícil
+            this.Font = new Font("Arial", 20, FontStyle.Bold);
+            this.Size = new Size(60, 60); // Tamanho muito reduzido para garantir que todas as cartas apareçam na tela
             this.BackColor = corVerso;
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 2;
