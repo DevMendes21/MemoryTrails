@@ -106,8 +106,9 @@ namespace TrilhasDaMemoria
             // Calcula o número total de pares
             totalPares = (linhas * colunas) / 2;
 
-            // Ajusta o tamanho do formulário com base no número de cartas (aumentado em 20%)
-            this.ClientSize = new Size((int)(colunas * 110 + 40), (int)(linhas * 110 + 120));
+            // Ajusta o tamanho do formulário com base no número de cartas (aumentado significativamente)
+            // Tamanho fixo maior para dar mais espaço às cartas
+            this.ClientSize = new Size(800, 600);
 
             // Cria e posiciona as cartas
             CriarCartas(linhas, colunas);
@@ -158,7 +159,10 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        carta.Location = new Point(coluna * 110 + 10, linha * 110 + 10);
+                        // Aumenta o espaçamento entre as cartas e centraliza no formulário maior
+                        int espacoHorizontal = (800 - (colunas * 110)) / 2;
+                        int espacoVertical = (500 - (linhas * 110)) / 2;
+                        carta.Location = new Point(coluna * 110 + espacoHorizontal, linha * 110 + espacoVertical);
                         this.Controls.Add(carta);
                         index++;
                     }

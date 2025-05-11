@@ -62,9 +62,9 @@ namespace TrilhasDaMemoria
             this.btnSair.Click += new System.EventHandler(this.MenuItemSair_Click);
             this.pnlInfo.Controls.Add(this.btnSair);
             this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInfo.Location = new System.Drawing.Point(0, 360);
+            this.pnlInfo.Location = new System.Drawing.Point(0, 500);
             this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(600, 100);
+            this.pnlInfo.Size = new System.Drawing.Size(800, 100);
             this.pnlInfo.TabIndex = 0;
             // 
             // lblTempo
@@ -128,7 +128,7 @@ namespace TrilhasDaMemoria
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(600, 460);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.pnlInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
