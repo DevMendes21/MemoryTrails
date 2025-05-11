@@ -51,7 +51,7 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(300, 80);
+            this.btnSair.Location = new System.Drawing.Point(50, 80);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(180, 50);
             this.btnSair.TabIndex = 7;
@@ -71,9 +71,9 @@ namespace TrilhasDaMemoria
             // 
             this.lblTempo.AutoSize = true;
             this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTempo.Location = new System.Drawing.Point(300, 15);
+            this.lblTempo.Location = new System.Drawing.Point(800, 25);
             this.lblTempo.Name = "lblTempo";
-            this.lblTempo.Size = new System.Drawing.Size(120, 21);
+            this.lblTempo.Size = new System.Drawing.Size(220, 32);
             this.lblTempo.TabIndex = 4;
             this.lblTempo.Text = "Tempo: 00:00";
             // 
@@ -81,9 +81,9 @@ namespace TrilhasDaMemoria
             // 
             this.lblPares.AutoSize = true;
             this.lblPares.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPares.Location = new System.Drawing.Point(180, 15);
+            this.lblPares.Location = new System.Drawing.Point(450, 25);
             this.lblPares.Name = "lblPares";
-            this.lblPares.Size = new System.Drawing.Size(80, 21);
+            this.lblPares.Size = new System.Drawing.Size(180, 32);
             this.lblPares.TabIndex = 3;
             this.lblPares.Text = "Pares: 0/0";
             // 
@@ -91,9 +91,9 @@ namespace TrilhasDaMemoria
             // 
             this.lblTentativas.AutoSize = true;
             this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTentativas.Location = new System.Drawing.Point(10, 15);
+            this.lblTentativas.Location = new System.Drawing.Point(50, 25);
             this.lblTentativas.Name = "lblTentativas";
-            this.lblTentativas.Size = new System.Drawing.Size(100, 21);
+            this.lblTentativas.Size = new System.Drawing.Size(200, 32);
             this.lblTentativas.TabIndex = 2;
             this.lblTentativas.Text = "Tentativas: 0";
             // 
@@ -115,7 +115,7 @@ namespace TrilhasDaMemoria
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
             this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(720, 80);
+            this.btnVoltar.Location = new System.Drawing.Point(970, 80);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(180, 50);
             this.btnVoltar.TabIndex = 0;

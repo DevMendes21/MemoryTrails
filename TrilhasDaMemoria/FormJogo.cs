@@ -159,11 +159,20 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        // Aumenta DRASTICAMENTE o espaçamento entre as cartas e centraliza no formulário maior
-                        // Espaçamento de 160 pixels entre cartas (era 130)
-                        int espacoHorizontal = (1200 - (colunas * 160)) / 2;
-                        int espacoVertical = (750 - (linhas * 160)) / 2;
-                        carta.Location = new Point(coluna * 160 + espacoHorizontal, linha * 160 + espacoVertical);
+                        // Garante que todas as cartas sejam visu00edveis, com espaçamento adequado
+                        // Calcula o espaço disponível para as cartas (considerando margens)
+                        int areaJogoLargura = 1200;
+                        int areaJogoAltura = 700; // Reduzido para garantir que as cartas não fiquem sob o painel
+                        
+                        // Calcula o espaçamento ideal entre as cartas
+                        int espacoEntreCartasH = Math.Min(160, (areaJogoLargura - 100) / colunas);
+                        int espacoEntreCartasV = Math.Min(160, (areaJogoAltura - 100) / linhas);
+                        
+                        // Centraliza as cartas na área disponível
+                        int espacoHorizontal = (areaJogoLargura - (colunas * espacoEntreCartasH)) / 2;
+                        int espacoVertical = (areaJogoAltura - (linhas * espacoEntreCartasV)) / 2;
+                        
+                        carta.Location = new Point(coluna * espacoEntreCartasH + espacoHorizontal, linha * espacoEntreCartasV + espacoVertical);
                         this.Controls.Add(carta);
                         index++;
                     }
