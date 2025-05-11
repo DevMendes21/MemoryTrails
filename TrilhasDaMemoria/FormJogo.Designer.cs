@@ -28,14 +28,65 @@ namespace TrilhasDaMemoria
         /// </summary>
         private void InitializeComponent()
         {
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.menuJogo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemNovoJogo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemVoltar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSair = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlInfo = new System.Windows.Forms.Panel();
             this.lblTempo = new System.Windows.Forms.Label();
             this.lblPares = new System.Windows.Forms.Label();
             this.lblTentativas = new System.Windows.Forms.Label();
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.menuStrip.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.pnlInfo.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuJogo});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // menuJogo
+            // 
+            this.menuJogo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemNovoJogo,
+            this.menuItemVoltar,
+            this.menuItemSair});
+            this.menuJogo.Name = "menuJogo";
+            this.menuJogo.Size = new System.Drawing.Size(45, 20);
+            this.menuJogo.Text = "Jogo";
+            // 
+            // menuItemNovoJogo
+            // 
+            this.menuItemNovoJogo.Name = "menuItemNovoJogo";
+            this.menuItemNovoJogo.ShortcutKeys = System.Windows.Forms.Keys.F2;
+            this.menuItemNovoJogo.Size = new System.Drawing.Size(180, 22);
+            this.menuItemNovoJogo.Text = "Novo Jogo";
+            this.menuItemNovoJogo.Click += new System.EventHandler(this.btnReiniciar_Click);
+            // 
+            // menuItemVoltar
+            // 
+            this.menuItemVoltar.Name = "menuItemVoltar";
+            this.menuItemVoltar.ShortcutKeys = System.Windows.Forms.Keys.Escape;
+            this.menuItemVoltar.Size = new System.Drawing.Size(180, 22);
+            this.menuItemVoltar.Text = "Voltar ao Menu";
+            this.menuItemVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // menuItemSair
+            // 
+            this.menuItemSair.Name = "menuItemSair";
+            this.menuItemSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.menuItemSair.Size = new System.Drawing.Size(180, 22);
+            this.menuItemSair.Text = "Sair";
+            this.menuItemSair.Click += new System.EventHandler(this.MenuItemSair_Click);
             // 
             // pnlInfo
             // 
@@ -115,6 +166,8 @@ namespace TrilhasDaMemoria
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 460);
             this.Controls.Add(this.pnlInfo);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormJogo";
@@ -124,7 +177,10 @@ namespace TrilhasDaMemoria
             this.Load += new System.EventHandler(this.FormJogo_Load);
             this.pnlInfo.ResumeLayout(false);
             this.pnlInfo.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -133,6 +189,11 @@ namespace TrilhasDaMemoria
         private Panel pnlInfo;
         private Button btnVoltar;
         private Button btnReiniciar;
+        private MenuStrip menuStrip;
+        private ToolStripMenuItem menuJogo;
+        private ToolStripMenuItem menuItemNovoJogo;
+        private ToolStripMenuItem menuItemVoltar;
+        private ToolStripMenuItem menuItemSair;
         private Label lblTentativas;
         private Label lblPares;
         private Label lblTempo;

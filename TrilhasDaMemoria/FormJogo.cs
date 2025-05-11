@@ -106,8 +106,8 @@ namespace TrilhasDaMemoria
             // Calcula o número total de pares
             totalPares = (linhas * colunas) / 2;
 
-            // Ajusta o tamanho do formulário com base no número de cartas
-            this.ClientSize = new Size(colunas * 90 + 20, linhas * 90 + 100);
+            // Ajusta o tamanho do formulário com base no número de cartas (aumentado em 20%)
+            this.ClientSize = new Size((int)(colunas * 110 + 40), (int)(linhas * 110 + 120));
 
             // Cria e posiciona as cartas
             CriarCartas(linhas, colunas);
@@ -158,7 +158,7 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        carta.Location = new Point(coluna * 90 + 10, linha * 90 + 10);
+                        carta.Location = new Point(coluna * 110 + 10, linha * 110 + 10);
                         this.Controls.Add(carta);
                         index++;
                     }
@@ -360,6 +360,15 @@ namespace TrilhasDaMemoria
             FormSelecaoNivel formSelecaoNivel = new FormSelecaoNivel();
             formSelecaoNivel.Show();
             this.Close();
+        }
+
+        /// <summary>
+        /// Evento disparado quando o item de menu Sair é clicado
+        /// </summary>
+        private void MenuItemSair_Click(object sender, EventArgs e)
+        {
+            // Encerra a aplicação
+            Application.Exit();
         }
 
         /// <summary>
