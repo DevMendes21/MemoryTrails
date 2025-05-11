@@ -1,0 +1,140 @@
+namespace TrilhasDaMemoria
+{
+    partial class FormJogo
+    {
+        /// <summary>
+        /// Variável de designer necessária.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpa os recursos que estão sendo usados.
+        /// </summary>
+        /// <param name="disposing">true se os recursos gerenciados devem ser descartados; caso contrário, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código gerado pelo Windows Form Designer
+
+        /// <summary>
+        /// Método necessário para suporte ao Designer - não modifique
+        /// o conteúdo deste método com o editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.pnlInfo = new System.Windows.Forms.Panel();
+            this.lblTempo = new System.Windows.Forms.Label();
+            this.lblPares = new System.Windows.Forms.Label();
+            this.lblTentativas = new System.Windows.Forms.Label();
+            this.btnReiniciar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.pnlInfo.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnlInfo
+            // 
+            this.pnlInfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlInfo.Controls.Add(this.lblTempo);
+            this.pnlInfo.Controls.Add(this.lblPares);
+            this.pnlInfo.Controls.Add(this.lblTentativas);
+            this.pnlInfo.Controls.Add(this.btnReiniciar);
+            this.pnlInfo.Controls.Add(this.btnVoltar);
+            this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlInfo.Location = new System.Drawing.Point(0, 400);
+            this.pnlInfo.Name = "pnlInfo";
+            this.pnlInfo.Size = new System.Drawing.Size(600, 60);
+            this.pnlInfo.TabIndex = 0;
+            // 
+            // lblTempo
+            // 
+            this.lblTempo.AutoSize = true;
+            this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTempo.Location = new System.Drawing.Point(300, 20);
+            this.lblTempo.Name = "lblTempo";
+            this.lblTempo.Size = new System.Drawing.Size(120, 21);
+            this.lblTempo.TabIndex = 4;
+            this.lblTempo.Text = "Tempo: 00:00";
+            // 
+            // lblPares
+            // 
+            this.lblPares.AutoSize = true;
+            this.lblPares.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPares.Location = new System.Drawing.Point(180, 20);
+            this.lblPares.Name = "lblPares";
+            this.lblPares.Size = new System.Drawing.Size(80, 21);
+            this.lblPares.TabIndex = 3;
+            this.lblPares.Text = "Pares: 0/0";
+            // 
+            // lblTentativas
+            // 
+            this.lblTentativas.AutoSize = true;
+            this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTentativas.Location = new System.Drawing.Point(10, 20);
+            this.lblTentativas.Name = "lblTentativas";
+            this.lblTentativas.Size = new System.Drawing.Size(100, 21);
+            this.lblTentativas.TabIndex = 2;
+            this.lblTentativas.Text = "Tentativas: 0";
+            // 
+            // btnReiniciar
+            // 
+            this.btnReiniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReiniciar.BackColor = System.Drawing.Color.LightBlue;
+            this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReiniciar.Location = new System.Drawing.Point(430, 10);
+            this.btnReiniciar.Name = "btnReiniciar";
+            this.btnReiniciar.Size = new System.Drawing.Size(80, 40);
+            this.btnReiniciar.TabIndex = 1;
+            this.btnReiniciar.Text = "Reiniciar";
+            this.btnReiniciar.UseVisualStyleBackColor = false;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnVoltar.Location = new System.Drawing.Point(520, 10);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(70, 40);
+            this.btnVoltar.TabIndex = 0;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // FormJogo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(600, 460);
+            this.Controls.Add(this.pnlInfo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FormJogo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Trilhas da Memória";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormJogo_FormClosed);
+            this.Load += new System.EventHandler(this.FormJogo_Load);
+            this.pnlInfo.ResumeLayout(false);
+            this.pnlInfo.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Panel pnlInfo;
+        private Button btnVoltar;
+        private Button btnReiniciar;
+        private Label lblTentativas;
+        private Label lblPares;
+        private Label lblTempo;
+    }
+}
