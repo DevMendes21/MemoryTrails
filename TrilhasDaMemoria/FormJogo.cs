@@ -159,26 +159,39 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        // Espaçamento padronizado ideal para todas as cartas
-                        // Calcula dinamicamente o melhor espaçamento com base no tamanho da tela e no número de cartas
+                        // Ajusta o espaçamento das cartas de acordo com o nível de dificuldade
+                        int espacoEntreCartas = 0;
+                        
+                        // Ajusta o espaçamento com base no número de cartas (nível de dificuldade)
+                        switch (totalPares * 2) // Total de cartas
+                        {
+                            case 8: // Fácil (4x2)
+                                espacoEntreCartas = 120; // Espaçamento menor para evitar que fiquem muito distantes
+                                break;
+                            case 18: // Médio (6x3)
+                                espacoEntreCartas = 110; // Espaçamento médio que funciona bem
+                                break;
+                            case 32: // Difícil (8x4)
+                                espacoEntreCartas = 95; // Espaçamento menor para evitar que fiquem muito próximas
+                                break;
+                            default:
+                                espacoEntreCartas = 100; // Valor padrão para outros casos
+                                break;
+                        }
                         
                         // Calcula o espaço disponível para as cartas
                         int areaJogoLargura = 800;
                         int areaJogoAltura = 450; // Espaço para as cartas (600 - 100 do painel - 50 de margem)
                         
-                        // Calcula o melhor espaçamento possível para as cartas
-                        int espacoHorizontalDisponivel = areaJogoLargura - 40; // 20px de margem de cada lado
-                        int espacoVerticalDisponivel = areaJogoAltura - 40; // 20px de margem de cada lado
-                        
-                        // Calcula o tamanho ideal para cada carta com base no espaço disponível
-                        int espacoEntreCartasH = espacoHorizontalDisponivel / colunas;
-                        int espacoEntreCartasV = espacoVerticalDisponivel / linhas;
-                        
                         // Centraliza as cartas na área disponível
-                        int margemHorizontal = (areaJogoLargura - (colunas * espacoEntreCartasH)) / 2;
-                        int margemVertical = (areaJogoAltura - (linhas * espacoEntreCartasV)) / 2;
+                        int margemHorizontal = (areaJogoLargura - (colunas * espacoEntreCartas)) / 2;
+                        int margemVertical = (areaJogoAltura - (linhas * espacoEntreCartas)) / 2;
                         
-                        carta.Location = new Point(coluna * espacoEntreCartasH + margemHorizontal, linha * espacoEntreCartasV + margemVertical);
+                        // Garante que as margens não sejam negativas
+                        margemHorizontal = Math.Max(margemHorizontal, 20);
+                        margemVertical = Math.Max(margemVertical, 20);
+                        
+                        carta.Location = new Point(coluna * espacoEntreCartas + margemHorizontal, linha * espacoEntreCartas + margemVertical);
                         this.Controls.Add(carta);
                         index++;
                     }
