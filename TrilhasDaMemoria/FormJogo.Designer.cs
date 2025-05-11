@@ -51,7 +51,7 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(300, 55);
+            this.btnSair.Location = new System.Drawing.Point(300, 55); // Abaixo de Tempo
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(100, 35);
             this.btnSair.TabIndex = 7;
