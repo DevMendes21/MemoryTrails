@@ -159,20 +159,23 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        // Garante que todas as cartas sejam visu00edveis, com espaçamento adequado
-                        // Calcula o espaço disponível para as cartas (considerando margens)
+                        // Espaçamento PADRONIZADO para todas as cartas
+                        // Valores fixos para garantir consistência em todos os níveis
+                        int espacoEntreCartas = 170; // Espaçamento fixo entre cartas
+                        
+                        // Calcula o espaço disponível para as cartas
                         int areaJogoLargura = 1200;
                         int areaJogoAltura = 700; // Reduzido para garantir que as cartas não fiquem sob o painel
                         
-                        // Calcula o espaçamento ideal entre as cartas
-                        int espacoEntreCartasH = Math.Min(160, (areaJogoLargura - 100) / colunas);
-                        int espacoEntreCartasV = Math.Min(160, (areaJogoAltura - 100) / linhas);
-                        
                         // Centraliza as cartas na área disponível
-                        int espacoHorizontal = (areaJogoLargura - (colunas * espacoEntreCartasH)) / 2;
-                        int espacoVertical = (areaJogoAltura - (linhas * espacoEntreCartasV)) / 2;
+                        int espacoHorizontal = (areaJogoLargura - (colunas * espacoEntreCartas)) / 2;
+                        int espacoVertical = (areaJogoAltura - (linhas * espacoEntreCartas)) / 2;
                         
-                        carta.Location = new Point(coluna * espacoEntreCartasH + espacoHorizontal, linha * espacoEntreCartasV + espacoVertical);
+                        // Garante que o espaçamento nunca seja negativo
+                        espacoHorizontal = Math.Max(espacoHorizontal, 20);
+                        espacoVertical = Math.Max(espacoVertical, 20);
+                        
+                        carta.Location = new Point(coluna * espacoEntreCartas + espacoHorizontal, linha * espacoEntreCartas + espacoVertical);
                         this.Controls.Add(carta);
                         index++;
                     }
