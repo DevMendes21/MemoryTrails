@@ -106,9 +106,24 @@ namespace TrilhasDaMemoria
             // Calcula o número total de pares
             totalPares = (linhas * colunas) / 2;
 
-            // Ajusta o tamanho do formulário para um tamanho razoável
-            // Tamanho fixo para dar espaço adequado às cartas
-            this.ClientSize = new Size(800, 600);
+            // Ajusta o tamanho do formulário com base no nível de dificuldade
+            switch (dificuldade)
+            {
+                case Dificuldade.Facil:
+                case Dificuldade.Medio:
+                    this.ClientSize = new Size(800, 600);
+                    break;
+                case Dificuldade.Dificil:
+                    // Tela maior para o modo difícil
+                    this.ClientSize = new Size(900, 700);
+                    break;
+                default:
+                    this.ClientSize = new Size(800, 600);
+                    break;
+            }
+            
+            // Ajusta o tamanho do painel de informações para ocupar toda a largura da tela
+            this.pnlInfo.Width = this.ClientSize.Width;
 
             // Cria e posiciona as cartas
             CriarCartas(linhas, colunas);
@@ -179,9 +194,9 @@ namespace TrilhasDaMemoria
                                 break;
                         }
                         
-                        // Calcula o espaço disponível para as cartas
-                        int areaJogoLargura = 800;
-                        int areaJogoAltura = 450; // Espaço para as cartas (600 - 100 do painel - 50 de margem)
+                        // Calcula o espaço disponível para as cartas com base no tamanho da tela
+                        int areaJogoLargura = this.ClientSize.Width;
+                        int areaJogoAltura = this.ClientSize.Height - 150; // Altura da tela menos o painel e margem
                         
                         // Centraliza as cartas na área disponível
                         int margemHorizontal = (areaJogoLargura - (colunas * espacoEntreCartas)) / 2;
