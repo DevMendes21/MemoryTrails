@@ -51,9 +51,9 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(240, 55); // Mais próximo dos outros botu00f5es
+            this.btnSair.Location = new System.Drawing.Point(85, 55); // Colado ao botão Voltar
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(120, 35);
+            this.btnSair.Size = new System.Drawing.Size(60, 35);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -71,7 +71,7 @@ namespace TrilhasDaMemoria
             // 
             this.lblTempo.AutoSize = true;
             this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTempo.Location = new System.Drawing.Point(240, 15); // Alinhado com o botu00e3o Sair
+            this.lblTempo.Location = new System.Drawing.Point(85, 15); // Alinhado com o botão Sair
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(220, 32);
             this.lblTempo.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace TrilhasDaMemoria
             // 
             this.lblPares.AutoSize = true;
             this.lblPares.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPares.Location = new System.Drawing.Point(130, 15); // Alinhado com o botu00e3o Voltar
+            this.lblPares.Location = new System.Drawing.Point(65, 15); // Alinhado com o botão Voltar
             this.lblPares.Name = "lblPares";
             this.lblPares.Size = new System.Drawing.Size(180, 32);
             this.lblPares.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace TrilhasDaMemoria
             this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReiniciar.Location = new System.Drawing.Point(20, 55); // Abaixo de Tentativas
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(120, 35);
+            this.btnReiniciar.Size = new System.Drawing.Size(60, 35);
             this.btnReiniciar.TabIndex = 1;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -115,9 +115,9 @@ namespace TrilhasDaMemoria
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
             this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(130, 55); // Mais pru00f3ximo do Reiniciar
+            this.btnVoltar.Location = new System.Drawing.Point(65, 55); // Colado ao botão Reiniciar
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(120, 35);
+            this.btnVoltar.Size = new System.Drawing.Size(60, 35);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
