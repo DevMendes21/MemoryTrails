@@ -51,7 +51,7 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(600, 55);
+            this.btnSair.Location = new System.Drawing.Point(500, 55);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(120, 35);
             this.btnSair.TabIndex = 7;
@@ -71,7 +71,7 @@ namespace TrilhasDaMemoria
             // 
             this.lblTempo.AutoSize = true;
             this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTempo.Location = new System.Drawing.Point(600, 15);
+            this.lblTempo.Location = new System.Drawing.Point(500, 15);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(220, 32);
             this.lblTempo.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace TrilhasDaMemoria
             // 
             this.lblPares.AutoSize = true;
             this.lblPares.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPares.Location = new System.Drawing.Point(310, 15);
+            this.lblPares.Location = new System.Drawing.Point(260, 15);
             this.lblPares.Name = "lblPares";
             this.lblPares.Size = new System.Drawing.Size(180, 32);
             this.lblPares.TabIndex = 3;
@@ -115,7 +115,7 @@ namespace TrilhasDaMemoria
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
             this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(310, 55);
+            this.btnVoltar.Location = new System.Drawing.Point(260, 55);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(120, 35);
             this.btnVoltar.TabIndex = 0;

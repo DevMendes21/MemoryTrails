@@ -42,7 +42,7 @@ namespace TrilhasDaMemoria
             this.Virada = false;
             this.Encontrada = false;
             this.Font = new Font("Arial", 24, FontStyle.Bold);
-            this.Size = new Size(90, 90);
+            this.Size = new Size(80, 80); // Reduzido para caber melhor no modo Difícil
             this.BackColor = corVerso;
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 2;

@@ -187,7 +187,7 @@ namespace TrilhasDaMemoria
                                 espacoEntreCartas = 110; // Espaçamento médio que funciona bem
                                 break;
                             case 32: // Difícil (8x4)
-                                espacoEntreCartas = 95; // Espaçamento menor para evitar que fiquem muito próximas
+                                espacoEntreCartas = 75; // Espaçamento muito reduzido para garantir que todas as cartas apareçam na tela
                                 break;
                             default:
                                 espacoEntreCartas = 100; // Valor padrão para outros casos
