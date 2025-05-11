@@ -159,10 +159,11 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        // Aumenta o espaçamento entre as cartas e centraliza no formulário maior
-                        int espacoHorizontal = (800 - (colunas * 110)) / 2;
-                        int espacoVertical = (500 - (linhas * 110)) / 2;
-                        carta.Location = new Point(coluna * 110 + espacoHorizontal, linha * 110 + espacoVertical);
+                        // Aumenta significativamente o espaçamento entre as cartas e centraliza no formulário maior
+                        // Espaçamento de 130 pixels entre cartas (era 110)
+                        int espacoHorizontal = (800 - (colunas * 130)) / 2;
+                        int espacoVertical = (500 - (linhas * 130)) / 2;
+                        carta.Location = new Point(coluna * 130 + espacoHorizontal, linha * 130 + espacoVertical);
                         this.Controls.Add(carta);
                         index++;
                     }
