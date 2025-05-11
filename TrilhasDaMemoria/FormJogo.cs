@@ -106,9 +106,9 @@ namespace TrilhasDaMemoria
             // Calcula o número total de pares
             totalPares = (linhas * colunas) / 2;
 
-            // Ajusta o tamanho do formulário com base no número de cartas (aumentado MUITO significativamente)
-            // Tamanho fixo MUITO maior para dar mais espaço às cartas
-            this.ClientSize = new Size(1200, 900);
+            // Ajusta o tamanho do formulário para um tamanho EXTREMAMENTE grande
+            // Tamanho fixo EXTREMAMENTE maior para dar MUITO mais espaço às cartas
+            this.ClientSize = new Size(1600, 1200);
 
             // Cria e posiciona as cartas
             CriarCartas(linhas, colunas);
@@ -159,21 +159,21 @@ namespace TrilhasDaMemoria
                     if (index < cartas.Count)
                     {
                         Carta carta = cartas[index];
-                        // Espaçamento PADRONIZADO para todas as cartas
-                        // Valores fixos para garantir consistência em todos os níveis
-                        int espacoEntreCartas = 170; // Espaçamento fixo entre cartas
+                        // Espaçamento MUITO MAIOR e PADRONIZADO para todas as cartas
+                        // Valores fixos AMPLOS para garantir consistência e MUITO espaço em todos os níveis
+                        int espacoEntreCartas = 220; // Espaçamento fixo MUITO maior entre cartas
                         
                         // Calcula o espaço disponível para as cartas
-                        int areaJogoLargura = 1200;
-                        int areaJogoAltura = 700; // Reduzido para garantir que as cartas não fiquem sob o painel
+                        int areaJogoLargura = 1600;
+                        int areaJogoAltura = 950; // Reduzido para garantir que as cartas não fiquem sob o painel
                         
                         // Centraliza as cartas na área disponível
                         int espacoHorizontal = (areaJogoLargura - (colunas * espacoEntreCartas)) / 2;
                         int espacoVertical = (areaJogoAltura - (linhas * espacoEntreCartas)) / 2;
                         
-                        // Garante que o espaçamento nunca seja negativo
-                        espacoHorizontal = Math.Max(espacoHorizontal, 20);
-                        espacoVertical = Math.Max(espacoVertical, 20);
+                        // Garante que o espaçamento nunca seja negativo e seja sempre amplo
+                        espacoHorizontal = Math.Max(espacoHorizontal, 50);
+                        espacoVertical = Math.Max(espacoVertical, 50);
                         
                         carta.Location = new Point(coluna * espacoEntreCartas + espacoHorizontal, linha * espacoEntreCartas + espacoVertical);
                         this.Controls.Add(carta);
