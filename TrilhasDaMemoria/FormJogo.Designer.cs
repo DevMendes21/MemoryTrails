@@ -51,26 +51,26 @@ namespace TrilhasDaMemoria
             this.pnlInfo.Controls.Add(this.btnVoltar);
             // Adicionar botão Sair
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnSair.Location = new System.Drawing.Point(200, 50);
+            this.btnSair.Location = new System.Drawing.Point(300, 80);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(120, 40);
+            this.btnSair.Size = new System.Drawing.Size(180, 50);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSair.Click += new System.EventHandler(this.MenuItemSair_Click);
             this.pnlInfo.Controls.Add(this.btnSair);
             this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInfo.Location = new System.Drawing.Point(0, 500);
+            this.pnlInfo.Location = new System.Drawing.Point(0, 750);
             this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(800, 100);
+            this.pnlInfo.Size = new System.Drawing.Size(1200, 150);
             this.pnlInfo.TabIndex = 0;
             // 
             // lblTempo
             // 
             this.lblTempo.AutoSize = true;
-            this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTempo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTempo.Location = new System.Drawing.Point(300, 15);
             this.lblTempo.Name = "lblTempo";
             this.lblTempo.Size = new System.Drawing.Size(120, 21);
@@ -80,7 +80,7 @@ namespace TrilhasDaMemoria
             // lblPares
             // 
             this.lblPares.AutoSize = true;
-            this.lblPares.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPares.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPares.Location = new System.Drawing.Point(180, 15);
             this.lblPares.Name = "lblPares";
             this.lblPares.Size = new System.Drawing.Size(80, 21);
@@ -90,7 +90,7 @@ namespace TrilhasDaMemoria
             // lblTentativas
             // 
             this.lblTentativas.AutoSize = true;
-            this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTentativas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTentativas.Location = new System.Drawing.Point(10, 15);
             this.lblTentativas.Name = "lblTentativas";
             this.lblTentativas.Size = new System.Drawing.Size(100, 21);
@@ -101,10 +101,10 @@ namespace TrilhasDaMemoria
             // 
             this.btnReiniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReiniciar.BackColor = System.Drawing.Color.LightBlue;
-            this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReiniciar.Location = new System.Drawing.Point(340, 50);
+            this.btnReiniciar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReiniciar.Location = new System.Drawing.Point(510, 80);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(120, 40);
+            this.btnReiniciar.Size = new System.Drawing.Size(180, 50);
             this.btnReiniciar.TabIndex = 1;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@ namespace TrilhasDaMemoria
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.LightCoral;
-            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVoltar.Location = new System.Drawing.Point(480, 50);
+            this.btnVoltar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnVoltar.Location = new System.Drawing.Point(720, 80);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(120, 40);
+            this.btnVoltar.Size = new System.Drawing.Size(180, 50);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
@@ -128,7 +128,7 @@ namespace TrilhasDaMemoria
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 900);
             this.Controls.Add(this.pnlInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
