@@ -1,0 +1,16 @@
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.AssemblyInfoInputs.cache
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.AssemblyInfo.cs
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.csproj.CoreCompileInputs.cache
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.sourcelink.json
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria.dll.config
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria.deps.json
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria.runtimeconfig.json
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria.dll
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/bin/Debug/net6.0-windows/TrilhasDaMemoria.pdb
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.dll
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/refint/TrilhasDaMemoria.dll
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.pdb
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/TrilhasDaMemoria.genruntimeconfig.cache
+/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/obj/Debug/net6.0-windows/ref/TrilhasDaMemoria.dll

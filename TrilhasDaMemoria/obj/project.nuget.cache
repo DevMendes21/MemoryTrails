@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IAwKrVvkdxQ=",
+  "success": true,
+  "projectFilePath": "/Users/mendes/Documents/MemoryTrails/TrilhasDaMemoria/TrilhasDaMemoria.csproj",
+  "expectedPackageFiles": [
+    "/Users/mendes/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/mendes/.nuget/packages/microsoft.windowsdesktop.app.ref/6.0.36/microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "/Users/mendes/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/mendes/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -18,8 +18,8 @@ namespace TrilhasDaMemoria
         private int paresEncontrados = 0;
         private int totalPares = 0;
         private bool jogoEmAndamento = false;
-        private Timer timerVirarCartas;
-        private Timer timerJogo;
+        private System.Windows.Forms.Timer timerVirarCartas;
+        private System.Windows.Forms.Timer timerJogo;
         private int tempoDecorrido = 0; // em segundos
 
         // Cores para as cartas
@@ -50,11 +50,11 @@ namespace TrilhasDaMemoria
             this.dificuldade = dificuldade;
 
             // Configura os timers
-            timerVirarCartas = new Timer();
+            timerVirarCartas = new System.Windows.Forms.Timer();
             timerVirarCartas.Interval = 1000; // 1 segundo
             timerVirarCartas.Tick += TimerVirarCartas_Tick;
 
-            timerJogo = new Timer();
+            timerJogo = new System.Windows.Forms.Timer();
             timerJogo.Interval = 1000; // 1 segundo
             timerJogo.Tick += TimerJogo_Tick;
         }
