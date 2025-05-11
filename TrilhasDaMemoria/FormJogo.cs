@@ -110,15 +110,17 @@ namespace TrilhasDaMemoria
             switch (dificuldade)
             {
                 case Dificuldade.Facil:
+                    this.ClientSize = new Size(600, 600);
+                    break;
                 case Dificuldade.Medio:
-                    this.ClientSize = new Size(800, 600);
+                    this.ClientSize = new Size(600, 600);
                     break;
                 case Dificuldade.Dificil:
                     // Tela maior para o modo difícil
-                    this.ClientSize = new Size(900, 700);
+                    this.ClientSize = new Size(760, 760);
                     break;
                 default:
-                    this.ClientSize = new Size(800, 600);
+                    this.ClientSize = new Size(900, 900);
                     break;
             }
             
