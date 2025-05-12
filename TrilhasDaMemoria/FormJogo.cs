@@ -126,6 +126,9 @@ namespace TrilhasDaMemoria
             
             // Ajusta o tamanho do painel de informações para ocupar toda a largura da tela
             this.pnlInfo.Width = this.ClientSize.Width;
+            
+            // Ajusta a posição dos botões com base no nível de dificuldade
+            AjustarPosicaoBotoes(dificuldade);
 
             // Cria e posiciona as cartas
             CriarCartas(linhas, colunas);
@@ -441,6 +444,68 @@ namespace TrilhasDaMemoria
             if (!telaSelecaoAberta)
             {
                 Application.Exit();
+            }
+        }
+        
+        /// <summary>
+        /// Ajusta a posição dos botões com base no nível de dificuldade
+        /// </summary>
+        /// <remarks>
+        /// Para ajustar manualmente a posição dos botões:
+        /// - Valores maiores de X movem o botão para a direita
+        /// - Valores menores de X movem o botão para a esquerda
+        /// - A coordenada Y (55) define a altura do botão no painel
+        /// </remarks>
+        private void AjustarPosicaoBotoes(Dificuldade nivel)
+        {
+            // Calcula a largura disponível para os botões
+            int larguraDisponivel = this.pnlInfo.Width;
+            
+            // DEFINIÇÕES MANUAIS DE POSIÇÃO
+            // Você pode ajustar estes valores para posicionar os botões como desejar
+            
+            // Posições para o modo FÁCIL (valores menores = mais à esquerda)
+            int facil_reiniciar_x = 35;    // Botão Reiniciar no modo Fácil
+            int facil_voltar_x = 225;       // Botão Voltar no modo Fácil
+            int facil_sair_x = 440;        // Botão Sair no modo Fácil
+            
+            // Posições para o modo MÉDIO (valores intermediários = centro)
+            // No modo médio, os botões são centralizados automaticamente
+            
+            // Posições para o modo DIFÍCIL (valores maiores = mais à direita)
+            int dificil_margem_direita = 120;  // Margem da direita para o último botão
+            
+            // Define as posições dos botões com base no nível
+            switch (nivel)
+            {
+                case Dificuldade.Facil:
+                    // No modo fácil, posiciona os botões conforme definido acima
+                    this.btnReiniciar.Location = new Point(facil_reiniciar_x, 55);
+                    this.btnVoltar.Location = new Point(facil_voltar_x, 55);
+                    this.btnSair.Location = new Point(facil_sair_x, 55);
+                    break;
+                    
+                case Dificuldade.Medio:
+                    // No modo médio, posiciona os botões no centro
+                    int centroMedio = (larguraDisponivel - 300) / 2; // 300 = largura total dos 3 botões
+                    this.btnReiniciar.Location = new Point(centroMedio, 55);
+                    this.btnVoltar.Location = new Point(centroMedio + 100, 55);
+                    this.btnSair.Location = new Point(centroMedio + 200, 55);
+                    break;
+                    
+                case Dificuldade.Dificil:
+                    // No modo difícil, posiciona os botões mais à direita
+                    this.btnReiniciar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 200), 55);
+                    this.btnVoltar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 100), 55);
+                    this.btnSair.Location = new Point(larguraDisponivel - dificil_margem_direita, 55);
+                    break;
+                    
+                default:
+                    // Posição padrão (igual ao modo difícil)
+                    this.btnReiniciar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 200), 55);
+                    this.btnVoltar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 100), 55);
+                    this.btnSair.Location = new Point(larguraDisponivel - dificil_margem_direita, 55);
+                    break;
             }
         }
     }
