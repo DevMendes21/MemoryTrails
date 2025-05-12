@@ -461,50 +461,65 @@ namespace TrilhasDaMemoria
             // Calcula a largura disponível para os botões
             int larguraDisponivel = this.pnlInfo.Width;
             
-            // DEFINIÇÕES MANUAIS DE POSIÇÃO
-            // Você pode ajustar estes valores para posicionar os botões como desejar
+            // DEFINIÇÕES DE POSIÇÃO BASEADAS NO MODO FÁCIL
+            // Posições de referência no modo Fácil (tela de 600x600)
+            int facil_reiniciar_x = 35;   // Botão Reiniciar no modo Fácil
+            int facil_voltar_x = 225;     // Botão Voltar no modo Fácil
+            int facil_sair_x = 440;       // Botão Sair no modo Fácil
             
-            // Posições para o modo FÁCIL (valores menores = mais à esquerda)
-            int facil_reiniciar_x = 35;    // Botão Reiniciar no modo Fácil
-            int facil_voltar_x = 225;       // Botão Voltar no modo Fácil
-            int facil_sair_x = 440;        // Botão Sair no modo Fácil
+            // DEFINIÇÕES MANUAIS PARA O MODO DIFÍCIL
+            // Você pode ajustar estas posições manualmente para o modo difícil
+            int dificil_reiniciar_x = 38;  // Botão Reiniciar no modo Difícil
+            int dificil_voltar_x = 230;     // Botão Voltar no modo Difícil
+            int dificil_sair_x = 440;       // Botão Sair no modo Difícil
             
-            // Posições para o modo MÉDIO (valores intermediários = centro)
-            // No modo médio, os botões são centralizados automaticamente
+            // Largura de referência do modo Fácil (600 pixels)
+            int larguraReferencia = 600;
             
-            // Posições para o modo DIFÍCIL (valores maiores = mais à direita)
-            int dificil_margem_direita = 120;  // Margem da direita para o último botão
+            // Calcula as proporções relativas dos botões no modo Fácil
+            double proporcaoReiniciar = (double)facil_reiniciar_x / larguraReferencia;
+            double proporcaoVoltar = (double)facil_voltar_x / larguraReferencia;
+            double proporcaoSair = (double)facil_sair_x / larguraReferencia;
+            
+            // Calcula as posições proporcionais para a tela atual
+            int posicaoReiniciar = (int)(larguraDisponivel * proporcaoReiniciar);
+            int posicaoVoltar = (int)(larguraDisponivel * proporcaoVoltar);
+            int posicaoSair = (int)(larguraDisponivel * proporcaoSair);
+            
+            // Garante que os botões não fiquem fora da tela
+            posicaoReiniciar = Math.Max(20, posicaoReiniciar);
+            posicaoVoltar = Math.Max(posicaoReiniciar + 110, posicaoVoltar);
+            posicaoSair = Math.Min(larguraDisponivel - 120, Math.Max(posicaoVoltar + 110, posicaoSair));
             
             // Define as posições dos botões com base no nível
             switch (nivel)
             {
                 case Dificuldade.Facil:
-                    // No modo fácil, posiciona os botões conforme definido acima
+                    // No modo fácil, usa as posições de referência
                     this.btnReiniciar.Location = new Point(facil_reiniciar_x, 55);
                     this.btnVoltar.Location = new Point(facil_voltar_x, 55);
                     this.btnSair.Location = new Point(facil_sair_x, 55);
                     break;
                     
                 case Dificuldade.Medio:
-                    // No modo médio, posiciona os botões no centro
-                    int centroMedio = (larguraDisponivel - 300) / 2; // 300 = largura total dos 3 botões
-                    this.btnReiniciar.Location = new Point(centroMedio, 55);
-                    this.btnVoltar.Location = new Point(centroMedio + 100, 55);
-                    this.btnSair.Location = new Point(centroMedio + 200, 55);
+                    // No modo médio, usa as proporções do modo fácil
+                    this.btnReiniciar.Location = new Point(posicaoReiniciar, 55);
+                    this.btnVoltar.Location = new Point(posicaoVoltar, 55);
+                    this.btnSair.Location = new Point(posicaoSair, 55);
                     break;
                     
                 case Dificuldade.Dificil:
-                    // No modo difícil, posiciona os botões mais à direita
-                    this.btnReiniciar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 200), 55);
-                    this.btnVoltar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 100), 55);
-                    this.btnSair.Location = new Point(larguraDisponivel - dificil_margem_direita, 55);
+                    // No modo difícil, usa as posições manuais definidas acima
+                    this.btnReiniciar.Location = new Point(dificil_reiniciar_x, 55);
+                    this.btnVoltar.Location = new Point(dificil_voltar_x, 55);
+                    this.btnSair.Location = new Point(dificil_sair_x, 55);
                     break;
                     
                 default:
-                    // Posição padrão (igual ao modo difícil)
-                    this.btnReiniciar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 200), 55);
-                    this.btnVoltar.Location = new Point(larguraDisponivel - (dificil_margem_direita + 100), 55);
-                    this.btnSair.Location = new Point(larguraDisponivel - dificil_margem_direita, 55);
+                    // Posição padrão (usa as proporções do modo fácil)
+                    this.btnReiniciar.Location = new Point(posicaoReiniciar, 55);
+                    this.btnVoltar.Location = new Point(posicaoVoltar, 55);
+                    this.btnSair.Location = new Point(posicaoSair, 55);
                     break;
             }
         }
